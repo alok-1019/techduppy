@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/techduppy/static/css/main.ead2c0f8.chunk.css",
-    "main.js": "/techduppy/static/js/main.1345cca8.chunk.js",
-    "main.js.map": "/techduppy/static/js/main.1345cca8.chunk.js.map",
+    "main.js": "/techduppy/static/js/main.688f9076.chunk.js",
+    "main.js.map": "/techduppy/static/js/main.688f9076.chunk.js.map",
     "runtime-main.js": "/techduppy/static/js/runtime-main.8630b9d5.js",
     "runtime-main.js.map": "/techduppy/static/js/runtime-main.8630b9d5.js.map",
     "static/js/2.18f1b27a.chunk.js": "/techduppy/static/js/2.18f1b27a.chunk.js",
@@ -12,12 +12,12 @@
     "index.html": "/techduppy/index.html",
     "static/css/main.ead2c0f8.chunk.css.map": "/techduppy/static/css/main.ead2c0f8.chunk.css.map",
     "static/js/2.18f1b27a.chunk.js.LICENSE.txt": "/techduppy/static/js/2.18f1b27a.chunk.js.LICENSE.txt",
-    "static/media/photo.d8996ad7.jpg": "/techduppy/static/media/photo.d8996ad7.jpg"
+    "static/media/alok.f1dcd07c.png": "/techduppy/static/media/alok.f1dcd07c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8630b9d5.js",
     "static/js/2.18f1b27a.chunk.js",
     "static/css/main.ead2c0f8.chunk.css",
-    "static/js/main.1345cca8.chunk.js"
+    "static/js/main.688f9076.chunk.js"
   ]
 }
