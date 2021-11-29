@@ -1,11 +1,5 @@
 import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
-// import Container from '@mui/material/Container';
-// import Grid from '@mui/material/Grid';
-// import GitHubIcon from '@mui/icons-material/GitHub';
-// import FacebookIcon from '@mui/icons-material/Facebook';
-// import TwitterIcon from '@mui/icons-material/Twitter';
-// import Sidebar from './Sidebar';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from './Header';
 import About from "./About";
