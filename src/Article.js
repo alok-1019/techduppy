@@ -4,21 +4,18 @@ import React from 'react'
 
 export default function Article() {
     return (
-        <Box
-            sx={{
-                height: 531
-            }}
-        >
-
+        <>
             <Box
                 sx={{
+                    my: 1.2,
                     mx: "auto",
                     maxHeight: 130,
                     minHeight: 130,
                     maxWidth: 450,
                     border: 0.1,
-                    borderRadius: 11,
+                    borderRadius: 3,
                     boxShadow: 5,
+                    borderColor: 'white',
                     py: 5.1,
                     px: 5.4
                 }}
@@ -27,6 +24,6 @@ export default function Article() {
                     I will publish articles soon.
                 </Typography>
             </Box>
-        </Box>
+        </>
     )
 }

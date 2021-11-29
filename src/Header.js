@@ -1,54 +1,45 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import Toolbar from '@mui/material/Toolbar';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
 import Card from "@mui/material/Card";
-import IconButton from '@mui/material/IconButton';
-import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import { Link } from "react-router-dom";
+import Button from '@mui/material/Button';
+import { cyan } from '@mui/material/colors';
+
 
 function Header(props) {
-  const { sections, title } = props;
-
+  const { title } = props;
   function MouseOver(event) {
     event.target.style.color = 'green';
   }
   function MouseOut(event) {
-    event.target.style.color = "";
+    event.target.style.color = "black";
   }
-
   return (
     <React.Fragment>
       <Card
         variant="elevation" elevation={3}
+        sx={{ mx: 0.3 }}
       >
         <Toolbar>
-          <IconButton sx={{mt:2}}>
-           <MenuRoundedIcon />
-          </IconButton>
           <Typography
-            component="h2"
+            component="h1"
             variant="h5"
-            color="inherit"
-            // align="center"
             noWrap
-            sx={{ fontSize:22, pt: 2, px: 0.5, flex: 1 }}
+            sx={{ ml: 0.1, pt: 1.8, flex: 1, fontSize: 24, color: cyan[700], fontFamily:'fantasy' }}
           >
-            {title}
+            <b>{title}</b>
           </Typography>
 
           <Typography sx={{ pt: 2 }} variant="button">
-            <Link
-              href="/contact"
-              underline="none"
-              color='inherit'>
+            <Link to="/contact" style={{ textDecoration: 'none' }}>
               <Button
-                variant='contained' color='inherit'
-                sx={{
-                  borderRadius: 5,
-                  bgcolor: '#C3E7FF'
-                }}
+                variant='contained'
+                elevation='6'
+                size='small'
+                href="https://twitter.com/alok10376"
+                sx={{ bgcolor: cyan[200], borderRadius: 2.5, color: 'black' }}
               >
                 Contact
               </Button>
@@ -59,39 +50,30 @@ function Header(props) {
         <Toolbar
           component="nav"
           variant="dense"
-          sx={{ justifyContent: 'space-between', overflowX: 'auto' }}
+          sx={{ mt: 2, mx: 0.58, justifyContent: 'space-between', overflowX: 'auto' }}
         >
-          {sections.map((section) => (
-            <Link
-              onMouseOver={MouseOver}
-              onMouseOut={MouseOut}
-              color="inherit"
-              noWrap
-              key={section.title}
-              variant="body2"
-              underline="none"
-              href={section.url}
-              sx={{ mb: 1, mt: 5, mx: 0.5, fontSize: 16, color: "-moz-initial", flexShrink: 0 }}
-            >
-              {section.title}
-            </Link>
-          ))}
+          <Link
+            onMouseOver={MouseOver}
+            onMouseOut={MouseOut}
+            to="/about" style={{ textDecoration: 'none', color: 'black' }}>  About </Link>
+
+          <Link style={{ textDecoration: 'none', color: 'black' }}
+            onMouseOver={MouseOver}
+            onMouseOut={MouseOut}
+            to="/project"
+          >
+            Projects
+          </Link>
+
+          <Link
+            onMouseOver={MouseOver}
+            onMouseOut={MouseOut}
+            to="/articles" style={{ textDecoration: 'none', color: 'black' }}> Articles </Link>
+
         </Toolbar>
       </Card>
-
-
     </React.Fragment >
   );
 }
-
-Header.propTypes = {
-  sections: PropTypes.arrayOf(
-    PropTypes.shape({
-      title: PropTypes.string.isRequired,
-      url: PropTypes.string.isRequired,
-    }),
-  ).isRequired,
-  title: PropTypes.string.isRequired,
-};
 
 export default Header;
