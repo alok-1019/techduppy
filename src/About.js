@@ -7,9 +7,7 @@ import { red, cyan } from '@mui/material/colors';
 export default function About() {
     return (
         <Box sx={{ mb: 0.6 }}>
-            <Grid container
-                spacing={1}
-            >
+            <Grid container spacing={1}  >
                 <Grid item xs={12} md={7}>
                     <Box
                         sx={{

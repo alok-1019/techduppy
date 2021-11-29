@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Toolbar from '@mui/material/Toolbar';
-// import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Card from "@mui/material/Card";
 import { Link } from "react-router-dom";
@@ -69,7 +68,6 @@ function Header(props) {
             onMouseOver={MouseOver}
             onMouseOut={MouseOut}
             to="/articles" style={{ textDecoration: 'none', color: 'black' }}> Articles </Link>
-
         </Toolbar>
       </Card>
     </React.Fragment >
